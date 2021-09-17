@@ -266,7 +266,9 @@
 
 <script>
 export default {
-   function s(){
+  
+}
+ function s(){
             var nombre1 = document.getElementById("nombre");
                  document.getElementById("estudiantes").innerHTML = nombre1.value;
                  var grado1 = document.getElementById("grado");
@@ -314,8 +316,9 @@ export default {
         document.getElementById("i").innerHTML=-1585;
     
     }
-}
 </script>
+
+<style>
 #secuencia{
     width: 100%;
     max-width:60%;
@@ -369,6 +372,4 @@ box-shadow: 7px 5px 3px #060;
     margin: 20px;
     text-align: center;
 }
-<style>
-
 </style>
