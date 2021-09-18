@@ -1,5 +1,5 @@
 <template>
-  <div>
+<div>  <!--div>
 
     <div class="p-3 mb-2 bg-primary text-white"> 
         <br>
@@ -40,7 +40,7 @@
 
   <br>
   <br>
-  <br><!--?php  require ("menu.php"); ?-->
+  <br><?php  require ("menu.php"); ?>
 
 <div id="hoja">
 <CENTER><b> ACTIVIDADES PARA LOS ESTUDIANTES QUE NO ALCANZARON LOS LOGROS DEL PRIMER PERÍODO ((**2021**);)</b></CENTER>
@@ -207,5 +207,6 @@ b.	¿Cuántos mililitros de la vacuna le pueden aplicar a usted?.<br>
     <script src="https://cryptotelefono.com/wp-content/uploads/assets/js/theme.js"></script>
 
 
-  </div>
+  </div-->
+</div>
 </template>
