@@ -1,15 +1,22 @@
 <template>
-  <hello-world />
+ <div>
+   <br><br><br><br>
+   
+   <br><br><br><br>
+   
+   <br><br><br><br>
+   <h1>APRENDIZAJE PARA EL SIGLO XXI</h1>
+ </div>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+
 
   export default {
     name: 'Home',
 
     components: {
-      HelloWorld,
+      
     },
   }
 </script>

@@ -20,7 +20,7 @@
         <v-list-item
           v-for="item in adminItems"
           :key="item.title"
-          link 
+          link :to="item.path" 
         >
      
              <v-list-item-icon>
@@ -35,12 +35,12 @@
       </v-list>
  <v-list
         dense
-        nav
+        nav 
       >
         <v-list-item
           v-for="item in items"
           :key="item.title"
-          link
+          link :to="item.path"
         >
              <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -64,14 +64,14 @@ data () {
       return {
           subtitle: "Bienvenido a su institución educativa",
           adminItems: [
-              { title:"Administrador", icon: "mdi-archive-settings"},
+              { title:"Administrador", icon: "mdi-archive-settings", path: "Administrador"},
               
           ],
         items: [ 
-            { title: 'Inicio', icon: 'mdi-home'},
+            { title: 'Inicio', icon: 'mdi-home', path: "/"},
 
-          { title: 'Estudiantes', icon: 'mdi-book-open-page-variant' },
-          { title: 'Maestros', icon: 'mdi-book-open-outline' },
+          { title: 'Estudiantes', icon: 'mdi-book-open-page-variant', path: "/"},
+          { title: 'Maestros', icon: 'mdi-book-open-outline', path: "Maestros"},
           { title: 'Acudientes', icon: 'mdi-book-open-page-variant-outline'},
         
         ],
