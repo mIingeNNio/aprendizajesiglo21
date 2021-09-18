@@ -5,7 +5,7 @@
       app
     >
       <!-- crear un componente que va a tener todo el contenido de mi barra de navegación -->
-  <Menubarraizquierda :title="title" :isAdmin="true"/>
+  <Menubarraizquierda :title="title" :isAdmin="false"/>
     </v-navigation-drawer>
 
     <v-app-bar app>

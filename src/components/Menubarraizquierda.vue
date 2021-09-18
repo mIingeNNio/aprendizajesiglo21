@@ -70,9 +70,9 @@ data () {
         items: [ 
             { title: 'Inicio', icon: 'mdi-home'},
 
-          { title: 'Estudiantes', icon: 'mdi-dialpad' },
-          { title: 'Maestros', icon: 'mdi-image' },
-          { title: 'Acudientes', icon: 'mdi-help-box'},
+          { title: 'Estudiantes', icon: 'mdi-book-open-page-variant' },
+          { title: 'Maestros', icon: 'mdi-book-open-outline' },
+          { title: 'Acudientes', icon: 'mdi-book-open-page-variant-outline'},
         
         ],
       };
