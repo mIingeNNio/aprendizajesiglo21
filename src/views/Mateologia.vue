@@ -240,7 +240,7 @@ export default {
     }
   
                     document.getElementById("demo").innerHTML = Date();*/
-            
+}    
 </script>
 
 <style>
