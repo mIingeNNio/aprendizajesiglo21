@@ -59,7 +59,7 @@
 <script>
 export default {
     name: "Menubarraizquierda",
-    props:["title", "isAdmin"],
+    props:["title", "isAdmin", "item"],
 data () {
       return {
           subtitle: "Bienvenido a su institución educativa",
@@ -68,12 +68,12 @@ data () {
               
           ],
         items: [ 
-            { title: 'Inicio', icon: 'mdi-home', path: "/"},
-
-          { title: 'Estudiantes', icon: 'mdi-book-open-page-variant', path: "/"},
-          { title: 'Maestros', icon: 'mdi-book-open-outline', path: "Maestros"},
+          { title: 'Inicio', icon: 'mdi-home', path: "/"},
+          { title: 'Estudiantes', icon: 'mdi-book-open-page-variant', path: "/Estudiantes"},
+          { title: 'Maestros', icon: 'mdi-book-open-outline', path: "/Maestros"},
           { title: 'Acudientes', icon: 'mdi-book-open-page-variant-outline'},
-        
+                 { title: 'Mateologia', icon: 'mdi-book-open-page-variant-outline', path:"/Mateologia"},
+
         ],
       };
 }

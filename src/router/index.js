@@ -11,6 +11,11 @@ const routes = [
     component: Home
   },
   {
+    path: '/Administrador',
+    name: 'Administrador',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Administrador.vue')
+  },
+  {
     path: '/Maestros',
     name: 'Maestros',
     // route level code-splitting
@@ -19,10 +24,25 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Maestros.vue')
   },
   {
-    path: '/Administrador',
-    name: 'Administrador',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Administrador.vue')
-  }
+    path: '/Maestros/new',
+    name: 'Mateologia',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Mateologia.vue')
+  },
+  {
+    path: '/Estudiantes',
+    name: 'Estudiantes',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Estudiantes.vue')
+  },
+  {
+    path: '/Estudiantes/new',
+    name: 'Nuevo Estudiante',
+    component: () => import(/* webpackChunkName: "about" */ '../views/NuevoEstudiante.vue')
+  },
+  {
+    path: '/Acudiente',
+    name: 'Acudientes',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Acudiente.vue')
+  },  
 
 ]
 

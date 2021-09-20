@@ -5,7 +5,7 @@
    <br><br><br><br>
    
    <br><br><br><br>
-   <h1>APRENDIZAJE PARA EL SIGLO XXI</h1>
+   <h1>APRENDIZAJE PARA EL SIGLO XXI - MI PÁGINA DE INICIO</h1>
  </div>
 </template>
 

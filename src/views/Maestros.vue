@@ -1,224 +1,191 @@
 <template>
   <div>
- <div class="p-3 mb-2 bg-primary text-white"> 
-        <br>
-        <br>
-        <br><nav  class="navbar navbar-expand-lg navbar-dark bg-dark" >
-  <a class="navbar-brand" href="#">ADMINISTRADOR</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<br><br><br><br><br><br><br><br>
+<v-timeline>
+    <v-timeline-item
+      v-for="n in 4"
+      :key="n"
+      large
+    >
+      <template v-slot:icon>
+        <v-avatar>
+          <img src="https://i.pravatar.cc/64">
+        </v-avatar>
+      </template>
+      <template v-slot:opposite>
+        <span>Adriana...</span>
+      </template>
+      <v-card class="elevation-2">
+        <v-card-title class="text-h5">
+          Magister en Educación: Matemática
+        </v-card-title>
+        <v-card-text>Docente de planta en la isntitución educativa desde 1992s.</v-card-text>
+      </v-card>
+    </v-timeline-item>
+  </v-timeline>
+<v-card>
+     <v-bottom-navigation v-model="value" >
+    <v-btn value="math"  elevation="13" fab to="/Maestros/new">
+      <span>MATEOLOGÍA</span>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="acudiente.html">ACUDIENTE</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="estudiante.html">ALUMNO</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PROFESOR
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="profesor.html">INGLES</a>
-          <a class="dropdown-item" href="profesor.html">ESPAÑOL</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="profesor.html">MATEMATICAS</a>
-        </div>
-      </li>
-      
-    </ul>
+      <v-icon>mdi-sigma</v-icon>
+    </v-btn>
+
+    <v-btn value="tech" elevation="9">
+      <span>TECNOLOGÍA</span>
+
+      <v-icon>mdi-tape-drive</v-icon>
+    </v-btn>
+
+    <v-btn value="cn" elevation="6">
+      <span>CIENCIAS NATURALES</span>
+
+      <v-icon>mdi-telescope</v-icon>
+    </v-btn>
+  </v-bottom-navigation>
+      <v-responsive :aspect-ratio="16/9">
+        <v-card-text>
+<div class="hoja" lg="3" md="4" sm="6" xs="12">
+  <br><b><div class="textotitulos">HORARIO DE CLASES PARA ESTUDIANTES Y PROFESORES</div></b>
     
-  </div>
-</nav>
- 
-
-<div class="p-3 mb-2 bg-primary text-white">
-
-  <br>
-  <br>
-  <br><!--<?php  require ("menu.php"); ?-->
-
-<div class="texto">
-  <br><B><div class="textotitulos">HORARIO DE CLASES PARA ESTUDIANTES Y PROFESORES</div></B>
-  <br>
-  <br>
-  <br>
-  <DIV class="container">
-    <div class="row">
-        <div class="col-md-5 col-md-push-5">
+       <div class="hoja" lg="3" md="4" sm="6" xs="12">
+         <br> "HORARIO DE CLASES ESTUDIANTES"
+         <tr>
+          <th scope="col">HORA</th>
+          <th scope="col">DIA 1</th>
+          <th scope="col">DIA 2</th>
+          <th scope="col">DIA 3</th>
+          <th scope="col">DIA 4</th>
+          <th scope="col">DIA 5</th>
+          </tr>
+         
+              <tr>
+              <th scope="row">11:50 - 12:45</th>
+              <td>LENGUA CASTELLANA</td>
+              <td>MATEOLOGÍA</td>
+              <td>TECNOLOGÍA</td>
+              <td>MATEMÁTICAS</td>
+              <td>TECNOLOGÍA</td>
+              </tr>
+              <tr>
+              <th scope="row">12:45 - 13:40</th>
+              <td>INGLÉS</td>
+              <td>INGLÉS</td>
+              <td>C. SOCIALES</td>
+              <td>C. SOCIALES</td>
+                <td>RELIGIÓN</td>
+              </tr>
+              <tr>
+              <th scope="row">13:40 - 14:35</th>
+              <td>LENGUA CASTELLANA</td>
+              <td>MATEOLOGÍA</td>
+              <td>TECNOLOGÍA</td>
+              <td>MATEOLOGÍA</td>
+              <td>TECNOLOGÍA</td>
+              </tr>
+              <tr>
+              <th scope="row">14:35 - 15:05</th>
+              <td colspan="5"><pre><B>D            E           S           C          A          N            S        O</B></pre></td>
+              </tr>
+              <tr>
+              <th scope="row">15:05 - 16:00</th>
+              <td>LENGUA CASTELLANA</td>
+              <td>MATEOLOGÍA</td>
+              <td>TECNOLOGÍA</td>
+              <td>MATEOLOGÍA</td>
+              <td>TECNOLOGÍA</td>
+              </tr>
+              <tr>
+              <th scope="row">16:00 - 16:55</th>
+              <td>LENGUA CASTELLANA</td>
+              <td>MATEOLOGÍA</td>
+              <td>TECNOLOGÍA</td>
+              <td>MATEOLOGÍA</td>
+              <td>TECNOLOGÍA</td>
+              </tr>
+              <tr>
+              <th scope="row">16:55 - 17:50</th>
+              <td>LENGUA CASTELLANA</td>
+              <td>MATEOLOGÍA</td>
+              <td>TECNOLOGÍA</td>
+              <td>MATEOLOGÍA</td>
+              <td>TECNOLOGÍA</td>
+              </tr>
+      </div>        
+      <br>
+    <div class="hoja" lg="3" md="4" sm="6" xs="12">
+      "HORARIO DE CLASES PROFESORES"
+      <br>
+             <tr class="table-active">
+            <th scope="col">HORA</th>
+            <th scope="col">DIA 1</th>
+            <th scope="col">DIA 2</th>
+            <th scope="col">DIA 3</th>
+            <th scope="col">DIA 4</th>
+            <th scope="col">DIA 5</th>
+            </tr>
+         
+            <tr class="table-active">
+            <th scope="row">11:50 - 12:45</th>
+            <td>0801</td>
+            <td>Proyecto Artes Escenicas</td>
+            <td>Proyecto Emprendimiento</td>
+            <td>Calificar</td>
+            <td>s201</td>
+            </tr>
+            <tr class="table-active">
+            <th scope="row">12:45 - 13:40</th>
+            <td>s201</td>
+            <td>Proyecto Artes</td>
+            <td>1102</td>
+            <td>1101</td>
+              <td>1002</td>
+            </tr>
+            <tr class="table-active">
+            <th scope="row">13:40 - 14:35</th>
+            <td>1001</td>
+            <td>0801</td>
+            <td>Proyecto Robótica</td>
+            <td>Proyecto Robótica</td>
+            <td>s201</td>
+            </tr>
+            <tr>
+            <th scope="row">14:35 - 15:05</th>
+            <td colspan="5"><B><pre>D            E           S           C          A          N            S        O</pre></B></td>
+            </tr>
+            <tr class="table-active">
+            <th scope="row">15:05 - 16:00</th>
+            <td>1001</td>
+            <td>1102</td>
+            <td>1101</td>
+            <td>Calificar</td>
+            <td>1002</td>
+            </tr>
+            <tr class="table-active">
+            <th scope="row">16:00 - 16:55</th>
+            <td>S-201</td>
+            <td>0901</td>
+            <td>0902</td>
+            <td>0902</td>
+            <td>0901</td>
+            </tr>
+            <tr class="table-active">
+            <th scope="row">16:55 - 17:50</th>
+            <td>P. Robótica</td>
+            <td>0901</td>
+            <td>092</td>
+            <td>0901</td>
+            <td>0902</td>
         
-
-
-  <br>
-  <br>
-  <table class="table table-success table-striped">
-<thead class="table-dark">
-    "HORARIO DE CLASES ESTUDIANTES"
-<tr>
-<th scope="col">HORA</th>
-<th scope="col">DIA 1</th>
-<th scope="col">DIA 2</th>
-<th scope="col">DIA 3</th>
-<th scope="col">DIA 4</th>
-<th scope="col">DIA 5</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">11:50 - 12:45</th>
-<td>LENGUA CASTELLANA</td>
-<td><a href="matematicas.html">MATEOLOGÍA</a></td>
-<td>TECNOLOGÍA</td>
-<td>MATEMÁTICAS</td>
-<td>TECNOLOGÍA</td>
-</tr>
-<tr>
-<th scope="row">12:45 - 13:40</th>
-<td>INGLÉS</td>
-<td>INGLÉS</td>
-<td>C. SOCIALES</td>
- <td>C. SOCIALES</td>
-  <td>RELIGIÓN</td>
-</tr>
-<tr>
-<th scope="row">13:40 - 14:35</th>
-<td>LENGUA CASTELLANA</td>
-<td>MATEOLOGÍA</td>
-<td>TECNOLOGÍA</td>
-<td>MATEOLOGÍA</td>
-<td>TECNOLOGÍA</td>
-</tr>
-<tr>
-<th scope="row">14:35 - 15:05</th>
-<td colspan="5"><pre><B>D            E           S           C          A          N            S        O</B></pre></td>
-</tr>
-<tr>
-<th scope="row">15:05 - 16:00</th>
-<td>LENGUA CASTELLANA</td>
-<td>MATEOLOGÍA</td>
-<td>TECNOLOGÍA</td>
-<td>MATEOLOGÍA</td>
-<td>TECNOLOGÍA</td>
-</tr>
-<tr>
-<th scope="row">16:00 - 16:55</th>
-<td>LENGUA CASTELLANA</td>
-<td>MATEOLOGÍA</td>
-<td>TECNOLOGÍA</td>
-<td>MATEOLOGÍA</td>
-<td>TECNOLOGÍA</td>
-</tr>
-<tr>
-<th scope="row">16:55 - 17:50</th>
-<td>LENGUA CASTELLANA</td>
-<td>MATEOLOGÍA</td>
-<td>TECNOLOGÍA</td>
-<td>MATEOLOGÍA</td>
-<td>TECNOLOGÍA</td>
-</tr>
-</tbody>
-</table>
-  <br></div>
-  <br>
-  <br><div class="col-md-2 col-md-push-2">
-    </div>
-  <br><div class="col-md-5 col-md-push-5">
-  
-  <br>
-  <br>
-<div class="table-responsive">
-<table class="table">
-<thead>
-   "HORARIO DE CLASES PROFESORES"
-<tr class="table-active">
-<th scope="col">HORA</th>
-<th scope="col">DIA 1</th>
-<th scope="col">DIA 2</th>
-<th scope="col">DIA 3</th>
-<th scope="col">DIA 4</th>
-<th scope="col">DIA 5</th>
-</tr>
-</thead>
-<tbody>
-<tr class="table-active">
-<th scope="row">11:50 - 12:45</th>
-<td>0801</td>
-<td>Proyecto Artes Escenicas</td>
-<td>Proyecto Emprendimiento</td>
-<td>Calificar</td>
-<td>s201</td>
-</tr>
-<tr class="table-active">
-<th scope="row">12:45 - 13:40</th>
-<td>s201</td>
-<td>Proyecto Artes</td>
-<td>1102</td>
- <td>1101</td>
-  <td>1002</td>
-</tr>
-<tr class="table-active">
-<th scope="row">13:40 - 14:35</th>
-<td>1001</td>
-<td>0801</td>
-<td>Proyecto Robótica</td>
-<td>Proyecto Robótica</td>
-<td>s201</td>
-</tr>
-<tr>
-<th scope="row">14:35 - 15:05</th>
-<td colspan="5"><B><pre>D            E           S           C          A          N            S        O</pre></B></td>
-</tr>
-<tr class="table-active">
-<th scope="row">15:05 - 16:00</th>
-<td>1001</td>
-<td>1102</td>
-<td>1101</td>
-<td>Calificar</td>
-<td>1002</td>
-</tr>
-<tr class="table-active">
-<th scope="row">16:00 - 16:55</th>
-<td>S-201</td>
-<td>0901</td>
-<td>0902</td>
-<td>0902</td>
-<td>0901</td>
-</tr>
-<tr class="table-active">
-<th scope="row">16:55 - 17:50</th>
-<td>P. Robótica</td>
-<td>0901</td>
-<td>092</td>
-<td>0901</td>
-<td>0902</td>
-</tr>
-</tbody>
-</table>
-</div>
-  <br>
-  <br>
-  </div>
-</div>
-</DIV>
-
-</div>
-</div>
-</div>  
-
-        <footer class="page-footer dark">
+          </tr>
+          </div> 
+ 
+<footer>
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
                     <h5>Empezar</h5>
                     <ul>
-                        <li><a href="#">Hogar</a></li>
-                        <li><a href="#">Iniciar Sesión</a></li>
                         <li><a href="#">Salir</a></li>
                     </ul>
                 </div>
@@ -226,40 +193,36 @@
                     <h5>Institución</h5>
                     <ul>
                         <li><a href="#">Información Colegio</a></li>
-                        <li><a href="#">Contáctanos</a></li>
-                        <li><a href="#">Reglamento</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h5>Apoyo</h5>
                     <ul>
                         <li><a href="#">Preguntas Frecuentes</a></li>
-                        <li><a href="#">Ayuda</a></li>
-                        <li><a href="#">Foro</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h5>Legal</h5>
                     <ul>
                         <li><a href="#">Términos de Servicio</a></li>
-                        <li><a href="#">Términos de Uso</a></li>
-                        <li><a href="#">Políticas de Privacidad</a></li>
-                    </ul>
+                   </ul>
                 </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
+            </div>        <div class="footer-copyright">
             <p>© 2021 MisiónTic UTP</p>
         </div>
+        </div>
     </footer>
-    
-
   </div>
+  </v-card-text>
+      </v-responsive>
+    </v-card>
+  </div>
+
 </template>
 
 <script>
 export default {
-  
+
 }
 
 </script>
@@ -280,9 +243,9 @@ export default {
      border: 7px solid rgba(82, 3, 16, 0.877);
      background: rgba(126, 196, 236, 0.802);
 }
-#hoja {
+.hoja {
     align-content:center;
-    width: 900px;
+    width: 100%;
     font:200px;
     background-color:  rgba(28, 111, 236, 0.26);
     font-family: 'Comic Sans serif','Courier New', Courier, monospace;
@@ -318,4 +281,5 @@ box-shadow: 7px 5px 3px #060;
     margin: 20px;
     text-align: center;
 }
+
 </style>

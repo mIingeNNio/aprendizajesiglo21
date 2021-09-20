@@ -6,6 +6,7 @@
    
    <br><br><br><br>
       <h1>VISTA ADMINISTRATIVA</h1>
+                        
   </div>
 </template>
 
